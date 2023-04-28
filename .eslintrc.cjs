@@ -49,6 +49,9 @@ module.exports = {
       { 'tabWidth': 2 },
       { 'ignoreRegExpLiterals': true }
     ],
+    'no-console': [
+      'error'
+    ],
     'react-refresh/only-export-components': 'warn',
   },
 }
