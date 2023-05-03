@@ -13,9 +13,9 @@ export function TOKEN_POST(body) {
   }
 }
 
-export function TOKEN_VALIATION_POST(token) {
+export function TOKEN_VALIDATION_POST(token) {
   return {
-    url: API_URL + '/jwt-auth/v1/validation',
+    url: API_URL + '/jwt-auth/v1/validate',
     options: {
       method: 'POST',
       headers: {

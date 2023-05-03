@@ -1,5 +1,5 @@
 import React from 'react'
-import { TOKEN_POST, TOKEN_VALIATION_POST, USER_GET } from './api'
+import { TOKEN_POST, TOKEN_VALIDATION_POST, USER_GET } from './api'
 import { useNavigate } from 'react-router-dom'
 
 export const UserContext = React.createContext()
@@ -59,7 +59,7 @@ export function UserStorage({ children }) {
           setError(null)
           setLoading(true)
 
-          const { url, options } = TOKEN_VALIATION_POST(token)
+          const { url, options } = TOKEN_VALIDATION_POST(token)
           const response = await fetch(url, options)
           if (!response.ok) throw new Error('Token inválido.')
 
