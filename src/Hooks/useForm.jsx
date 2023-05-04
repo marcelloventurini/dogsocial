@@ -4,12 +4,16 @@ const validation = {
   email: {
     regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     message: 'Use um email válido.'
+  },
+  number: {
+    regex: /^\d+$/,
+    message: 'Use apenas números'
   }
 }
 
 function useForm(dataType) {
   const [value, setValue] = React.useState('')
-  const [error, setError] = React.useState()
+  const [error, setError] = React.useState(null)
 
   function validate(value) {
     if (dataType === false) return true
