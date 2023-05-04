@@ -39,7 +39,7 @@ export function UserStorage({ children }) {
       if (!response.ok) throw new Error('Error: Usuário inválido.')
 
       const { token } = await response.json()
-  
+
       window.localStorage.setItem('token', token)
       await getUser(token)
       navigate('/conta')
@@ -69,6 +69,8 @@ export function UserStorage({ children }) {
         } finally {
           setLoading(false)
         }
+      } else {
+        setLogin(false)
       }
     }
 
