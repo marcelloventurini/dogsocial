@@ -1,6 +1,10 @@
+import Feed from './Feed/Feed'
+
 function Home() {
   return (
-    <div>Home</div>
+    <section className='container mainContainer'>
+      <Feed />
+    </section>
   )
 }
 
