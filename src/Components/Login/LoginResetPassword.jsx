@@ -41,7 +41,7 @@ function LoginResetPassword() {
 
   return (
     <div>
-      <Head title='Redefinir Senha' />
+      <Head title='Redefinir Senha' /> 
       <h1 className='title'>Redefina a Senha</h1>
       <form onSubmit={handleSubmit}>
         <Input label='Nova Senha' type='password'
