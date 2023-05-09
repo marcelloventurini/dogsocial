@@ -40,7 +40,7 @@ function LoginResetPassword() {
   }
 
   return (
-    <div>
+    <section className='animationLeft'>
       <Head title='Redefinir Senha' /> 
       <h1 className='title'>Redefina a Senha</h1>
       <form onSubmit={handleSubmit}>
@@ -51,7 +51,7 @@ function LoginResetPassword() {
           <Button>Redefinir Senha</Button>}
       </form>
       <Error error={error} />
-    </div>
+    </section>
   )
 }
 

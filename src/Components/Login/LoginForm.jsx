@@ -34,7 +34,7 @@ function LoginForm() {
         {loading ?
           <Button disabled>Carregando...</Button> :
           <Button>Entrar</Button>}
-        <Error error={error} />
+        <Error error={error && 'Login ou Senha incorretos.'} />
       </form>
       <Link className={styles.remember} to='/login/lembrar'>
         Esqueci a senha.

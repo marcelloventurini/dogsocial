@@ -21,7 +21,7 @@ function LoginRememberPassword() {
   }
   
   return (
-    <section>
+    <section className='animationLeft'>
       <Head title='Lembrar Senha' />
       <h1 className='title'>Esqueceu a senha?</h1>
       {data ?
